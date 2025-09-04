@@ -5,21 +5,23 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>click game</title>
 		<style>
-html, body, #canvas {
+html, body {
 	margin: 0;
 	padding: 0;
-	border: 0;
-}
-
-body {
-	color: white;
-	background-color: black;
+	height: 100%;
+	width: 100%;
 	overflow: hidden;
-	touch-action: none;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #canvas {
 	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 
 #canvas:focus {
@@ -217,4 +219,3 @@ const engine = new Engine(GODOT_CONFIG);
 		</script>
 	</body>
 </html>
-
